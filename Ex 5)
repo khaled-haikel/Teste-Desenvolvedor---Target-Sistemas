@@ -1,0 +1,13 @@
+string_original = "!odigro ,rovedevnesned omoc etecaM"
+
+# Inverte a string original
+string_invertida = ""
+for i in range(len(string_original)-1, -1, -1):
+    string_invertida += string_original[i]
+
+# Imprime a string invertida
+print(string_invertida)
+
+A saída será:
+
+Me aceite como desenvolvedor, obrigado!
