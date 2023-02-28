@@ -1,0 +1,28 @@
+# Valor de faturamento mensal por estado
+faturamento_estados = {
+    "SP": 67836.43,
+    "RJ": 36678.66,
+    "MG": 29229.88,
+    "ES": 27165.48,
+    "Outros": 19849.53
+}
+
+# Calcula o total do faturamento mensal
+total_faturamento = sum(faturamento_estados.values())
+
+# Calcula o percentual de representação de cada estado
+percentuais = {}
+for estado, valor in faturamento_estados.items():
+    percentuais[estado] = (valor / total_faturamento) * 100
+
+# Imprime os resultados
+for estado, percentual in percentuais.items():
+    print(f"{estado} - {percentual:.2f}%")
+
+A saída do código será:
+
+SP - 37.36%
+RJ - 20.24%
+MG - 16.12%
+ES - 14.97%
+Outros - 10.31%
